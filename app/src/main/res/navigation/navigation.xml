@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/transactionsFragment">
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.bryanalvarez.lealmessages.view.ui.fragments.TransactionsFragment"
+        android:label="fragment_transactions2"
+        tools:layout="@layout/fragment_transactions2" >
+        <action
+            android:id="@+id/action_transactionsFragment_to_transactionsDetailFragmentDialog"
+            app:destination="@id/transactionsDetailFragmentDialog" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/transactionsDetailFragmentDialog"
+        android:name="com.bryanalvarez.lealmessages.view.ui.fragments.TransactionDetailFragment"
+        android:label="TransactionsDetailFragmentDialog"
+        tools:layout="@layout/fragment_transaction_detail"/>
+</navigation>
