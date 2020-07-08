@@ -15,6 +15,7 @@ with the logo of the app, then you would see the Main Screen where the transacti
        all the transactions from the API and save them in the mobile database.
        
 The following third-party libraries were used in the project:
+
     1. Material Design, for visual components.
     2. Volley, to made HTTP Request and capture the data from the API.
     3. Glide, to load images.
